@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="image">
+    <file>../image/bg2.jpg</file>
+    <file>../image/arrow.png</file>
+    <file>../image/pannelheader.png</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>../icon/player.png</file>
+    <file>../icon/unplay.png</file>
+  </qresource>
+</RCC>

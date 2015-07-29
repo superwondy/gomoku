@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="image">
+    <file>../image/bg3.jpg</file>
+    <file>../image/bg2.jpg</file>
+    <file>../image/lplayer.jpg</file>
+    <file>../image/lplayer.jpg</file>
+    <file>../image/bg.jpg</file>
+    <file>../image/rplayer.jpg</file>
+    <file>../image/black.png</file>
+    <file>../image/arrow.png</file>
+    <file>../image/pannelheader.png</file>
+    <file>../image/playtable.png</file>
+    <file>../image/sticblack.png</file>
+    <file>../image/sticwhite.png</file>
+    <file>../image/white.png</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>../icon/close.png</file>
+    <file>../icon/blackplayer.png</file>
+    <file>../icon/player.png</file>
+    <file>../icon/whiteplayer.png</file>
+    <file>../icon/appicon.png</file>
+  </qresource>
+</RCC>

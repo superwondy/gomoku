@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gameRoom</class>
+ <widget class="QMainWindow" name="gameRoom">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>819</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>游戏大厅</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gameroom.qrc">
+    <normaloff>:/icon/icon/unplay.png</normaloff>:/icon/icon/unplay.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+}
+
+QFrame,QGroupBox,QPushButton,QLabel,QLineEdit,QTextEdit{
+	image: url();
+}
+
+QLabel#pannelHeader{
+	background-image: url(:/image/image/pannelheader.png);
+}
+
+QLabel#labelTable1{
+	image: url(:/image/image/arrow.png);
+}
+
+QLabel#labelTable2{
+	image: url(:/image/image/arrow.png);
+}
+
+QPushButton#bt_0{
+	image: url(:/icon/icon/unplay.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_0:hover{
+	image: url(:/icon/icon/player.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_0:!enabled{
+	image: url(:/icon/icon/player.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_1{
+	image: url(:/icon/icon/unplay.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_1:hover{
+	image: url(:/icon/icon/player.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_1:!enabled{
+	image: url(:/icon/icon/player.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_2{
+	image: url(:/icon/icon/unplay.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_2:hover{
+	image: url(:/icon/icon/player.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_2:!enabled{
+	image: url(:/icon/icon/player.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_3{
+	image: url(:/icon/icon/unplay.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_3:hover{
+	image: url(:/icon/icon/player.png);
+	border-radius:5px;
+	padding:2px 4px;
+}
+
+QPushButton#bt_3:!enabled{
+	image: url(:/icon/icon/player.png);
+	border-radius:5px;
+	padding:2px 4px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="pannelHeader">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>816</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>211</width>
+      <height>495</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QTextEdit" name="editMsg">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>195</width>
+       <height>181</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineMsg">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>470</y>
+       <width>158</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btSendMsg">
+     <property name="geometry">
+      <rect>
+       <x>166</x>
+       <y>470</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>发送</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>195</width>
+       <height>255</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>房间1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>房间2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>房间3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>房间4</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>110</y>
+      <width>591</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="bt_0">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>70</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_1">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>70</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>280</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_3">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>280</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTable1">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>90</y>
+       <width>161</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>桌子一</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTable2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>300</y>
+       <width>161</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>桌子二</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_1">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>170</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>空座</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_2">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>170</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>空座</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>380</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>空座</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_4">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>380</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>空座</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="table1">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>440</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>T_0_0_0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="table2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>440</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>T_0_1_0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="table3">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>440</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>T_1_0_0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="table4">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>440</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>T_1_1_0</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="gameroom.qrc"/>
+ </resources>
+ <connections/>
+</ui>
